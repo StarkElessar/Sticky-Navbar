@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 350ms ease-in 0ms;
+}
+nav.sticky {
+  padding: 5px 20px;
+  background: #4070f4;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo a{
+  font-size: 35px;
+  font-weight: 500;
+  color: #4070f4;
+  transition: all 350ms ease 0ms;
+}
+nav.sticky .logo a {
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) ;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+}
+.nav__links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav__links li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0e2431;
+  color: #fff;
+  padding: 10px 4px;
+  transition: all 350ms ease 0ms;
+}
+.nav__links li a:hover {
+  color: #4070f4;
+}
+nav.sticky .nav__links li a {
+  color: #fff;
+  transition: all 350ms ease 0ms;
+}
+nav.sticky .nav__links li a:hover {
+  color: #0e2431;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url('https://images.pexels.com/photos/3992716/pexels-photo-3992716.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+}
+.text {
+  padding: 40px 80px;
+  text-align: justify;
+  box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.text h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #4070f4;
+  margin-bottom: 6px;
+}
