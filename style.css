@@ -119,7 +119,7 @@ header.sticky .nav__links li a:hover {
   background-position: center;
 }
 .text {
-  padding: 40px 80px;
+  padding: 60px 80px 40px;
   text-align: justify;
   box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -129,7 +129,13 @@ header.sticky .nav__links li a:hover {
   color: #4070f4;
   margin-bottom: 6px;
 }
+.text p {
+  font-size: 24px;
+  line-height: 160%;
+  margin-bottom: 20px;
+}
 
+/* Адаптивная часть */
 @media screen and (max-width: 768px) {
   .burger-btn {
     display: block;
@@ -224,5 +230,8 @@ header.sticky .nav__links li a:hover {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all 350ms ease-in-out 0ms;
+  }
+  .text {
+    padding: 60px 20px 40px;
   }
 }
